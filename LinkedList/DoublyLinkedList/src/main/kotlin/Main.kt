@@ -1,0 +1,15 @@
+fun main() {
+    val doublyLinkedList = DoublyLinkedList<Int>()
+    doublyLinkedList.push(1)
+    doublyLinkedList.push(2)
+    doublyLinkedList.push(3)
+    doublyLinkedList.push(4)
+    println(doublyLinkedList)
+    //  <-> (null) 4 (3) <-> (4) 3 (2) <-> (3) 2 (1) <-> (2) 1 (null)
+    doublyLinkedList.removeAt(0)
+    println(doublyLinkedList)
+    //  <-> (null) 3 (2) <-> (3) 2 (1) <-> (2) 1 (null)
+    doublyLinkedList.removeAt(1)
+    println(doublyLinkedList)
+    //  <-> (null) 3 (1) <-> (3) 1 (null)
+}
